@@ -1,0 +1,148 @@
+# Unified Dataset Configuration
+# This file defines the configuration for each dataset, including tools and prompts
+
+datasets:
+  # GAIA dataset - uses all available tools
+  gaia:
+    tools: ["python", "search", "browse", "image2text", "audio2text", "file_reader"]
+    max_llm_calls: 40
+    data_file: "gaia.jsonl"
+    has_file_attachments: true
+    file_base_path_env: "FILE_BASE_PATH"
+    default_file_base_path: "/path/to/eval_data/gaia"
+    description: "GAIA benchmark with multimodal capabilities"
+  
+  gaia_text:
+    tools: ["python", "search", "browse"]
+    max_llm_calls: 40
+    data_file: "gaia_text.jsonl"
+    has_file_attachments: false
+    file_base_path_env: "FILE_BASE_PATH"
+    default_file_base_path: "/path/to/eval_data/gaia"
+    description: "GAIA text-only subset"
+  
+  # Math datasets - only need Python tool
+  math500:
+    tools: ["python"]
+    max_llm_calls: 30
+    data_file: "math500.jsonl"
+    has_file_attachments: false
+    description: "MATH500 benchmark"
+  
+  aime24:
+    tools: ["python"]
+    max_llm_calls: 30
+    data_file: "aime24.jsonl"
+    has_file_attachments: false
+    description: "AIME 2024 problems"
+  
+  aime25:
+    tools: ["python"]
+    max_llm_calls: 30
+    data_file: "aime25.jsonl"
+    has_file_attachments: false
+    description: "AIME 2025 problems"
+  
+  gsm8k:
+    tools: ["python"]
+    max_llm_calls: 30
+    data_file: "gsm8k.jsonl"
+    has_file_attachments: false
+    description: "GSM8K math reasoning"
+  
+  # QA datasets - need search and browse tools
+  2wiki:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "2wiki.jsonl"
+    has_file_attachments: false
+    description: "2WikiMultihopQA"
+  
+  2wiki200:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "2wiki200.jsonl"
+    has_file_attachments: false
+    description: "2WikiMultihopQA (ARPO)"
+  
+  hotpotqa200:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "hotpotqa200.jsonl"
+    has_file_attachments: false
+    description: "HotpotQA (ARPO)"
+  
+  hotpotqa1000:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "hotpotqa400.jsonl"
+    has_file_attachments: false
+    description: "HotpotQA (1000 samples)"
+  
+  hotpotqa:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "hotpotqa.jsonl"
+    has_file_attachments: false
+    description: "HotpotQA (full dataset)"
+  
+  musique200:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "musique.jsonl"
+    has_file_attachments: false
+    description: "MuSiQue (ARPO)"
+  
+  musique:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "musique.jsonl"
+    has_file_attachments: false
+    description: "MuSiQue (full dataset)"
+  
+  bamboogle:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "bamboogle.jsonl"
+    has_file_attachments: false
+    description: "Bamboogle"
+  
+  # Web browsing datasets
+  webwalker:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "webwalker.jsonl"
+    has_file_attachments: false
+    description: "WebWalker"
+  
+  webwalker200:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "webwalker200.jsonl"
+    has_file_attachments: false
+    description: "WebWalker (ARPO)"
+  
+  hle:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "hle.jsonl"
+    has_file_attachments: false
+    description: "HLE benchmark"
+  
+  xbench:
+    tools: ["search", "browse"]
+    max_llm_calls: 40
+    data_file: "xbench.jsonl"
+    has_file_attachments: false
+    description: "XBench-deepsearch"
+
+# Default configuration
+defaults:
+  eval_data_dir: "../eval_data"
+  max_workers: 20
+  temperature: 0.6
+  top_p: 0.95
+  rollout_count: 3
+  timeout_seconds: 9000  # 150 minutes
+  max_token_limit: 24477
+
