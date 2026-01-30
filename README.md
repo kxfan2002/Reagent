@@ -1,7 +1,7 @@
 # Reagent: Agentic Reinforcement Learning with Reasoning Reward Model
 
 <p align="center">
-  <a href="https://arxiv.org/">[📖paper]</a> &nbsp;&nbsp;
+  <a href="https://arxiv.org/pdf/2601.22154">[📖paper]</a> &nbsp;&nbsp;
   <a href="https://huggingface.co/bunny127/Reagent">[🤗Reagent model]</a> &nbsp;&nbsp;
   <a href="https://huggingface.co/bunny127/Agent-RRM">[🤗Agent-RRM]</a>
 </p>
