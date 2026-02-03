@@ -193,7 +193,12 @@ The script will:
 If you find this work helpful, please consider citing:
 
 ```bibtex
-
+@article{fan2026exploring,
+  title={Exploring Reasoning Reward Model for Agents},
+  author={Fan, Kaixuan and Feng, Kaituo and Zhang, Manyuan and Peng, Tianshuo and Li, Zhixun and Jiang, Yilei and Chen, Shuang and Pei, Peng and Cai, Xunliang and Yue, Xiangyu},
+  journal={arXiv preprint arXiv:2601.22154},
+  year={2026}
+}
 ```
 
 
