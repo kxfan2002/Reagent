@@ -1,4 +1,4 @@
-# Reagent: Agentic Reinforcement Learning with Reasoning Reward Model
+# Agent-RRM: Agentic Reinforcement Learning with Reasoning Reward Model
 
 <p align="center">
   <a href="https://arxiv.org/pdf/2601.22154">[📖paper]</a> &nbsp;&nbsp;
