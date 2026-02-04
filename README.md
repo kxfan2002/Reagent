@@ -105,6 +105,8 @@ bash ./examples/reagent/train.sh
 
 > **Note**: Make sure to configure paths and hyperparameters in the respective shell scripts before training.
 
+> For **SFT Training**, please refer to [LLaMA-Factory](https://github.com/hiyouga/LlamaFactory).
+
 ## Evaluation
 
 We provide a unified evaluation framework supporting 18 diverse benchmarks with automatic tool and prompt configuration.
