@@ -7,6 +7,7 @@
 #
 # Usage:
 #   bash start_server.sh
+#   use a vllm environment
 ################################################################################
 
 set -e

@@ -43,10 +43,10 @@ export TORCHDYNAMO_DISABLE=1
 
 # ============ Dataset Configuration ============
 # Change this to evaluate different datasets
-# Available: gaia, gaia_text, math500, aime24, aime25, gsm8k, 2wiki, 2wiki200,
+# Available: bamboogle, webwalker, webwalker200, hle, xbench
 #            hotpotqa, hotpotqa1000, hotpotqa_full, musique, musique_full,
-#            bamboogle, webwalker, webwalker200, hle, xbench
-DATASET="gaia"
+#            gaia, gaia_text, math500, aime24, aime25, gsm8k, 2wiki, 2wiki200,
+DATASET="webwalker200" # the 200 subset sampled by ARPO
 
 # ============ Model Configuration ============
 # Path to your model (set via environment variable or modify here)
