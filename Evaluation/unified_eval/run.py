@@ -19,7 +19,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Unified evaluation script for multiple datasets")
     parser.add_argument("--model", type=str, required=True, help="Path or name of the model")
     parser.add_argument("--output", type=str, required=True, help="Output directory for results")
-    parser.add_argument("--dataset", type=str, required=True, help="Dataset name (e.g., gaia, math500, 2wiki)")
+    parser.add_argument("--dataset", type=str, required=True, help="Dataset name (e.g., webwalkerqa200, math500, 2wiki)")
     parser.add_argument("--temperature", type=float, default=0.6, help="Sampling temperature")
     parser.add_argument("--top_p", type=float, default=0.95, help="Top-p sampling parameter")
     parser.add_argument("--max_workers", type=int, default=20, help="Maximum number of concurrent workers")

@@ -10,8 +10,8 @@
 #
 # Configuration:
 #   - Set DATASET to the name of the dataset you want to evaluate
-#   - Available datasets: gaia, gaia_text, math500, aime24, aime25, gsm8k,
-#     2wiki, hotpotqa, musique, bamboogle, webwalker, hle, xbench
+#   - Available datasets: 2wiki, hotpotqa, musique, bamboogle, webwalker, hle, xbench,
+#     gaia, gaia_text, math500, aime24, aime25, gsm8k
 ################################################################################
 
 set -e
